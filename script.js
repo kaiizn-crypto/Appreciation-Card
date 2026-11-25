@@ -10,7 +10,6 @@ function toggleCard() {
   card.classList.toggle("is-open");
 }
 
-// One click anywhere on the card opens or closes it
 card.addEventListener("click", toggleCard);
 
 card.addEventListener("keydown", (e) => {
@@ -20,7 +19,6 @@ card.addEventListener("keydown", (e) => {
   }
 });
 
-// Switch between English and Khmer without closing the card
 btnEn.addEventListener("click", (e) => {
   e.stopPropagation();
   btnEn.classList.add("active");
@@ -40,3 +38,27 @@ btnKm.addEventListener("click", (e) => {
   quoteKm.classList.remove("hidden");
   quoteEn.classList.add("hidden");
 });
+
+function createFallingSunflowers() {
+  const container = document.getElementById("falling-sunflowers");
+  if (!container) return;
+
+  const symbols = ["🌻", "🌻", "🍂", "🍁", "🌼"];
+  const totalItems = 30;
+
+  for (let i = 0; i < totalItems; i++) {
+    const item = document.createElement("div");
+    item.className = "falling-item";
+    item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+    item.style.left = Math.floor(Math.random() * 96) + "vw";
+    item.style.fontSize = Math.floor(Math.random() * 14 + 16) + "px";
+    item.style.opacity = (Math.random() * 0.45 + 0.45).toFixed(2);
+    item.style.animationDuration = (Math.random() * 7 + 8).toFixed(1) + "s";
+    item.style.animationDelay = (Math.random() * 6).toFixed(1) + "s";
+
+    container.appendChild(item);
+  }
+}
+
+createFallingSunflowers();

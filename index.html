@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A Bouquet of Gratitude for Grandma</title>
+  <title>A Bouquet of Gratitude for Makyey</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Lora:wght@400;500&family=Kantumruy+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="falling-sunflowers" aria-hidden="true"></div>
+
   <main class="stage">
     <div class="greeting-card" id="card" role="button" tabindex="0" aria-label="Click to open greeting card">
-      
+
       <!-- Front Cover: Sunflower Bouquet -->
       <div class="card-cover">
         <div class="cover-front">
           <div class="cover-frame">
             <span class="top-tag">With Deepest Gratitude</span>
 
-            <!-- Illustrated Bouquet of Sunflowers -->
             <div class="bouquet" aria-hidden="true">
               <div class="leaf-back leaf-1"></div>
               <div class="leaf-back leaf-2"></div>
               <div class="leaf-back leaf-3"></div>
 
-              <!-- Left Sunflower -->
               <div class="flower flower-left">
                 <div class="petals">
                   <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -32,7 +32,6 @@
                 <div class="disc"></div>
               </div>
 
-              <!-- Right Sunflower -->
               <div class="flower flower-right">
                 <div class="petals">
                   <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -41,7 +40,6 @@
                 <div class="disc"></div>
               </div>
 
-              <!-- Center Main Sunflower -->
               <div class="flower flower-center">
                 <div class="petals">
                   <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -50,7 +48,6 @@
                 <div class="disc"></div>
               </div>
 
-              <!-- Kraft Paper Bouquet Wrap & Ribbon -->
               <div class="bouquet-wrap"></div>
               <div class="bouquet-ribbon"></div>
             </div>
@@ -60,7 +57,7 @@
           </div>
         </div>
 
-        <!-- Inside Left Page (Visible once opened) -->
+        <!-- Inside Left Page -->
         <div class="cover-inside">
           <div class="inside-left-art">
             <div class="mini-sunflower">🌻</div>
@@ -70,16 +67,15 @@
         </div>
       </div>
 
-      <!-- Inside Right Page (Main Appreciation Letter) -->
+      <!-- Inside Right Page -->
       <div class="card-inside-right">
         <div class="lang-bar">
           <button type="button" class="lang-btn active" id="btn-en">English</button>
           <button type="button" class="lang-btn" id="btn-km">ភាសាខ្មែរ</button>
         </div>
 
-        <!-- English Letter -->
         <div class="message-content" id="letter-en">
-          <span class="greeting-tag">An Appreciation Letter For You</span>
+          <span class="greeting-tag">An Appreciation Letter for You</span>
           <h2>Dear Makyey,</h2>
           <p>
             Words can never fully measure everything you have given up and worked through for the sake of this family. From the quiet sacrifices no one saw to the endless care you poured into raising and supporting everyone, your strength is the reason this family stands together today.
@@ -87,10 +83,9 @@
           <p>
             Thank you for welcoming me with that same generous heart and making me feel truly accepted. Like a bouquet of sunflowers, your love brings warmth, resilience, and brightness to every single person blessed to know you.
           </p>
-          <p class="signature">With deepest respect and gratitude,<br><strong>[Leap]</strong></p>
+          <p class="signature">With deepest respect and gratitude,<br><strong>Leap</strong></p>
         </div>
 
-        <!-- Khmer Letter -->
         <div class="message-content khmer-text hidden" id="letter-km" lang="km">
           <span class="greeting-tag">ដោយក្តីគោរព និងដឹងគុណ</span>
           <h2>ជូនចំពោះ លោកយាយ ជាទីគោរពស្រឡាញ់,</h2>
@@ -100,7 +95,7 @@
           <p>
             សូមអរគុណលោកយាយយ៉ាងជ្រាលជ្រៅ ដែលបានទទួលស្វាគមន៍ចៅដោយចិត្តទូលាយ និងភាពកក់ក្តៅបំផុត។ ប្រៀបដូចជាបាច់ផ្កាឈូករ័ត្ន ក្តីស្រឡាញ់របស់លោកយាយតែងតែនាំមកនូវពន្លឺ និងភាពរីករាយដល់កូនចៅគ្រប់ៗគ្នា។
           </p>
-          <p class="signature">ដោយសេចក្តីគោរព និងដឹងគុណដ៏ខ្ពង់ខ្ពស់,<br><strong>[លាភ]</strong></p>
+          <p class="signature">ដោយសេចក្តីគោរព និងដឹងគុណដ៏ខ្ពង់ខ្ពស់,<br><strong>លាភ</strong></p>
         </div>
       </div>
 
